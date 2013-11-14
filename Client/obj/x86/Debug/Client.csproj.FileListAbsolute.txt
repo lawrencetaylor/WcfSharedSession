@@ -1,0 +1,8 @@
+c:\users\lawrence\documents\visual studio 2010\Projects\WcfCrossProxySessions\Client\bin\Debug\Client.exe.config
+c:\users\lawrence\documents\visual studio 2010\Projects\WcfCrossProxySessions\Client\bin\Debug\Client.exe
+c:\users\lawrence\documents\visual studio 2010\Projects\WcfCrossProxySessions\Client\bin\Debug\Client.pdb
+c:\users\lawrence\documents\visual studio 2010\Projects\WcfCrossProxySessions\Client\obj\x86\Debug\Client.Form1.resources
+c:\users\lawrence\documents\visual studio 2010\Projects\WcfCrossProxySessions\Client\obj\x86\Debug\Client.Properties.Resources.resources
+c:\users\lawrence\documents\visual studio 2010\Projects\WcfCrossProxySessions\Client\obj\x86\Debug\Client.csproj.GenerateResource.Cache
+c:\users\lawrence\documents\visual studio 2010\Projects\WcfCrossProxySessions\Client\obj\x86\Debug\Client.exe
+c:\users\lawrence\documents\visual studio 2010\Projects\WcfCrossProxySessions\Client\obj\x86\Debug\Client.pdb

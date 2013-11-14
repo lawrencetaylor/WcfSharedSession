@@ -1,0 +1,5 @@
+c:\users\lawrence\documents\visual studio 2010\Projects\WcfCrossProxySessions\Service\bin\Debug\Service.exe.config
+c:\users\lawrence\documents\visual studio 2010\Projects\WcfCrossProxySessions\Service\bin\Debug\Service.exe
+c:\users\lawrence\documents\visual studio 2010\Projects\WcfCrossProxySessions\Service\bin\Debug\Service.pdb
+c:\users\lawrence\documents\visual studio 2010\Projects\WcfCrossProxySessions\Service\obj\x86\Debug\Service.exe
+c:\users\lawrence\documents\visual studio 2010\Projects\WcfCrossProxySessions\Service\obj\x86\Debug\Service.pdb
