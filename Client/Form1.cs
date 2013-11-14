@@ -1,36 +1,37 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.ServiceModel;
 using System.ServiceModel.Channels;
-using System.Text;
 using System.Windows.Forms;
 
 namespace Client
 {
     public partial class Form1 : Form
     {
+        private IStatefulService _sessionOne;
+        private IStatefulService _sessionTwo;
+        private IStatefulService _sessionThree;
+
         public Form1()
         {
             InitializeComponent();
+            _sessionOne = CreateSessionfulProxy();
+            _sessionTwo = CreateSessionfulProxy();
+            _sessionThree = CreateSessionfulProxy();
         }
 
         private void _sessionButtonOne_Click(object sender, EventArgs e)
         {
-            Display(CreateSessionfulProxy().IncrementAndReturn());
+            Display(_sessionOne.IncrementAndReturn());
         }
 
         private void _sessionButtonTwo_Click(object sender, EventArgs e)
         {
-            Display(CreateSessionfulProxy().IncrementAndReturn());
+            Display(_sessionTwo.IncrementAndReturn());
         }
 
         private void _sessionButtonThree_Click(object sender, EventArgs e)
         {
-            Display(CreateSessionfulProxy().IncrementAndReturn());
+            Display(_sessionThree.IncrementAndReturn());
         }
 
         private void _sharedButtonOne_Click(object sender, EventArgs e)

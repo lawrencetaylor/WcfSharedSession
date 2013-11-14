@@ -3,3 +3,8 @@ c:\users\lawrence\documents\visual studio 2010\Projects\WcfCrossProxySessions\Se
 c:\users\lawrence\documents\visual studio 2010\Projects\WcfCrossProxySessions\Service\bin\Debug\Service.pdb
 c:\users\lawrence\documents\visual studio 2010\Projects\WcfCrossProxySessions\Service\obj\x86\Debug\Service.exe
 c:\users\lawrence\documents\visual studio 2010\Projects\WcfCrossProxySessions\Service\obj\x86\Debug\Service.pdb
+C:\MyTemp\WcfSharedSession\Service\bin\Debug\Service.exe.config
+C:\MyTemp\WcfSharedSession\Service\bin\Debug\Service.exe
+C:\MyTemp\WcfSharedSession\Service\bin\Debug\Service.pdb
+C:\MyTemp\WcfSharedSession\Service\obj\x86\Debug\Service.exe
+C:\MyTemp\WcfSharedSession\Service\obj\x86\Debug\Service.pdb
