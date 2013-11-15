@@ -36,6 +36,8 @@
             this._sharedButtonThree = new System.Windows.Forms.Button();
             this._sharedButtonTwo = new System.Windows.Forms.Button();
             this._sharedButtonOne = new System.Windows.Forms.Button();
+            this._sessionLabel = new System.Windows.Forms.TextBox();
+            this._sharedSessionLabel = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -124,11 +126,31 @@
             this._sharedButtonOne.UseVisualStyleBackColor = true;
             this._sharedButtonOne.Click += new System.EventHandler(this._sharedButtonOne_Click);
             // 
+            // _sessionLabel
+            // 
+            this._sessionLabel.Location = new System.Drawing.Point(240, 32);
+            this._sessionLabel.Multiline = true;
+            this._sessionLabel.Name = "_sessionLabel";
+            this._sessionLabel.ReadOnly = true;
+            this._sessionLabel.Size = new System.Drawing.Size(187, 74);
+            this._sessionLabel.TabIndex = 5;
+            // 
+            // _sharedSessionLabel
+            // 
+            this._sharedSessionLabel.Location = new System.Drawing.Point(240, 183);
+            this._sharedSessionLabel.Multiline = true;
+            this._sharedSessionLabel.Name = "_sharedSessionLabel";
+            this._sharedSessionLabel.ReadOnly = true;
+            this._sharedSessionLabel.Size = new System.Drawing.Size(187, 74);
+            this._sharedSessionLabel.TabIndex = 6;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 318);
+            this.ClientSize = new System.Drawing.Size(458, 318);
+            this.Controls.Add(this._sharedSessionLabel);
+            this.Controls.Add(this._sessionLabel);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
             this.Name = "Form1";
@@ -136,6 +158,7 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -149,6 +172,8 @@
         private System.Windows.Forms.Button _sharedButtonThree;
         private System.Windows.Forms.Button _sharedButtonTwo;
         private System.Windows.Forms.Button _sharedButtonOne;
+        private System.Windows.Forms.TextBox _sessionLabel;
+        private System.Windows.Forms.TextBox _sharedSessionLabel;
 
     }
 }

@@ -1,6 +1,8 @@
 ﻿using System;
 using System.ServiceModel;
 using System.ServiceModel.Channels;
+using System.Threading;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Client
@@ -17,6 +19,10 @@ namespace Client
             _sessionOne = CreateSessionfulProxy();
             _sessionTwo = CreateSessionfulProxy();
             _sessionThree = CreateSessionfulProxy();
+
+            _sessionLabel.Text = "Each proxy is connected to it's own dedicated object on the server.  State is not shared between proxies";
+            _sharedSessionLabel.Text =
+                "Each proxy is connected to the same object on the server.  This allows state on the server to be shared between processes.";
         }
 
         private void _sessionButtonOne_Click(object sender, EventArgs e)
@@ -51,7 +57,7 @@ namespace Client
 
         private static void Display(int counter)
         {
-            MessageBox.Show(string.Format("Counter value: {0}", counter));
+            Task.Factory.StartNew(() => MessageBox.Show(string.Format("Counter value: {0}", counter)));
         }
 
         IStatefulService CreateSessionfulProxy()
@@ -98,6 +104,7 @@ namespace Client
         {
             return MessageHeader.CreateHeader(HeaderName, HeaderNamespace, instanceId);
         }
+
     }
 
     [ServiceContract]
